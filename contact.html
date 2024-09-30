@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="contactUs_body">
+    <header>
+      <div class="logo"><a href="/">Darpan Rijal</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="space">
+    <div class="container_contact_us">
+      <div class="heading_contactUs">
+        <h1><p>Contact Us</p></h1>
+      </div>
+        <form action="backend.js">
+          <div class="fname">
+            <label for="fname">Full Name</label>
+            <input type="text" name="fname_id" id="fname" />
+          </div>
+          <div class="email">
+            <label for="ename">E-mail</label>
+            <input type="email" name="ename_id" id="ename" />
+          </div>
+          <div class="phnum">
+            <label for="phnum">Phone No</label>
+            <input type="tel" name="phnum_id" id="phnum" />
+          </div>
+          <div class="subject">
+            <label for="subjname">Subject</label>
+            <input type="text" name="subjname_id" id="subjname" />
+          </div>
+          <div class="message">
+            <label for="msg">Message</label>
+            <textarea name="msg_id" id="msg" cols="30" rows="5" maxlength="5000"></textarea>
+          </div>
+          <button class="cancel">Cancel</button>
+          <button class="submit">Submit</button>
+        </form>
+    </div>
+  </div>
+  </body>
+</html>
