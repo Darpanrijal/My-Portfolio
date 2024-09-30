@@ -10,7 +10,8 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     /* background: #ccb188d5; */
-    background: #ebc689;
+    /*background: #ebc689;*/
+    background: #ffffff;
 }
 header{
     display: flex;
