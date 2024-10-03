@@ -309,6 +309,7 @@ textarea {
   .btn1,
   .btn2 {
     margin-top: 15px;
+    margin: 0 auto;
   }
 
   .socialmedia {
