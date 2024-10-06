@@ -9,7 +9,12 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   /* background: #ccb188d5; */
-  background: #ffffff;
+  background: #e4f0ff;
+  /* background: url(darpan.jpg); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  overflow: visible;
 }
 header {
   display: flex;
@@ -44,20 +49,34 @@ img {
   object-fit: cover;
   width: 300px;
   height: 300px;
-  position: relative;
+  position: absolute;
+ 
   left: 30vw;
   top: 25vh;
   border: 2px solid black;
+}
+.profileimg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
 }
 .container {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   line-height: 50px;
+  align-content: center;
+}
+.container img{
+  position: relative;
+  left: 0;
 }
 .text {
-  margin-left: 850px;
-  margin-right: 20vw;
+  margin-left: 400px;
+  margin-top: 280px;
 }
 .fa {
   width: 35px;
@@ -89,9 +108,10 @@ img {
   left: 5px;
 }
 .socialmedia {
-  position: relative;
   top: 33px;
   left: 20px;
+  margin-top: 45px;
+  margin: 45px 0px 0px 25px;
 }
 .btn1 {
   position: relative;
@@ -100,7 +120,7 @@ img {
   width: 130px;
   height: 45px;
   border-radius: 2rem;
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: transparent;
   color: black;
   font-size: 0.9rem;
@@ -114,7 +134,7 @@ img {
   height: 45px;
   border-radius: 2rem;
   background-color: rgb(20, 20, 20);
-  border: 1px solid rgb(53, 53, 53);
+  border: 2px solid rgb(53, 53, 53);
   color: white;
   font-size: 0.9rem;
   font-weight: 600;
@@ -241,6 +261,32 @@ textarea {
   margin-bottom: 30px;
   margin-top: 145px;
 }
+/* .sidebar {
+  position: fixed;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  backdrop-filter: blur(15px);
+  top: 0;
+  right: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+} */
+ .filesvg{
+display: inline;
+position: absolute; 
+top: 12px;
+visibility: hidden;
+}
+nav li a:hover {
+  background-color: #bbbbbb;
+}
 @media only screen and (max-width: 1569px) {
   body {
     font-family: "Poppins", sans-serif;
@@ -248,11 +294,9 @@ textarea {
   header {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    right: 25px;
+    position: absolute;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
   }
   nav {
     height: 8vh;
@@ -265,54 +309,74 @@ textarea {
     font-size: 1.4rem;
   }
   li {
-    display: inline-block;
     padding: 5px 10px;
   }
   .logo a {
     text-decoration: none;
     color: #180601;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    position: fixed;
+    font-weight: 600;
+    top: 20px;
+    left: 20px;
   }
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-  }
-
-  img {
     height: auto;
-    margin-bottom: 20px;
-    display: block;
-    position: relative;
-    max-width:500px;
-    max-height:300px;
-    margin: 0 auto; 
-    top: 7vh;
-    left: 10px;
   }
-
   .text {
-    text-align: bottom;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
   }
   .first {
-    margin-top: 15vh;
+    margin-top: 33vh;
+    align-self: center;
+    justify-content: center;
   }
 
   .heading h1 {
     font-size: 3rem;
+    align-self: center;
+    justify-content: center;
   }
-
-  .btn1,
-  .btn2 {
-    margin-top: 15px;
-    margin: 0 auto;
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
   }
-
+  .btn1,.btn2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+  }
   .socialmedia {
-    margin-top: 20px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
   }
+  .filesvg{
+    position: fixed; 
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    right: 10px;
+    float: right;
+    top: 10px;
+    padding-right: 20px;
+  }
+  .navbar{
+    display: none;
+  }
+  nav li:has(svg){
+    position: relative;
+    float: right;
+  }
+  
 }
