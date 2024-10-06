@@ -52,7 +52,7 @@ img {
   position: absolute;
  
   left: 30vw;
-  top: 25vh;
+  top: 18vh;
   border: 2px solid black;
 }
 .profileimg{
@@ -336,7 +336,7 @@ nav li a:hover {
     justify-content: center;
   }
   .first {
-    margin-top: 33vh;
+    margin-top: 22vh;
     align-self: center;
     justify-content: center;
   }
